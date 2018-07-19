@@ -26,6 +26,7 @@ public class HelloController {
 //        }
         m.addAttribute("name", "thymeleaf");
         System.out.println("hahahaha ctrl+K");
+        // 我是更新后的
         return "hello";
     }
 
