@@ -25,6 +25,7 @@ public class HelloController {
 //            throw new Exception("some exception");
 //        }
         m.addAttribute("name", "thymeleaf");
+        System.out.println("hahahaha ctrl+K");
         return "hello";
     }
 
