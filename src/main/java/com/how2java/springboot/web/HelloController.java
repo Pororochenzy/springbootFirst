@@ -26,6 +26,7 @@ public class HelloController {
 //        }
         m.addAttribute("name", "thymeleaf");
         System.out.println("hahahaha ctrl+K");
+        System.out.println("ctrl+t 是更新,更新是指把文件从git下载到本地呢");
         // 我是更新后的
         return "hello";
     }
