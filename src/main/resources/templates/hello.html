@@ -1,0 +1,29 @@
+<!--注意几点：
+1. 使用 @这种方式引入，在渲染后的html 里会自动生成 上下文路径，既如图所示的 /thymeleaf 这个路径
+2. 如果使用浏览器直接打开当前的 hello.html, 依然可以看到css 和 js 效果，因为如下代码起作用：-->
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../webapp/static/css/style.css" th:href="@{/static/css/style.css}"/>
+    <script type="text/javascript" src="../../webapp/static/js/thymeleaf.js" th:src="@{/static/js/thymeleaf.js}"></script>
+
+    <script>
+        testFunction();
+    </script>
+
+</head>
+<body>
+<div class="showing">
+
+    <p th:text="${name}" >name</p>
+    <p th:text="'Hello！ ' + ${name} + '!'" >hello world</p>
+    <p th:text="|Hello！ ${name}!|" >hello world</p>
+
+</div>
+
+
+</body>
+
+</html>
